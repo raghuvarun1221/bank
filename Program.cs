@@ -347,7 +347,7 @@ namespace bank
 
                 p.Atm();
 
-                Customer c1 = new Customer() { Name = "Raghu", AccNo = 123, Amount = 10000 };
+                Customer c1 = new Customer() { Name = "Raghu", AccNo = 123, Amount = 8500 };
                 Customer c2 = new Customer() { Name = "Ravan", AccNo = 124, Amount = 8000 };
                 Customer c3 = new Customer() { Name = "Rohan", AccNo = 125, Amount = 7000 };
                 Customer c4 = new Customer() { Name = "Rajiv", AccNo = 126, Amount = 6000 };

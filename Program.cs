@@ -347,15 +347,17 @@ namespace bank
 
                 p.Atm();
 
-                Customer c1 = new Customer() { Name = "Raghu", AccNo = 123, Amount = 5000 };
-                Customer c2 = new Customer() { Name = "Ravan", AccNo = 124, Amount = 5000 };
-                Customer c3 = new Customer() { Name = "Rohan", AccNo = 125, Amount = 5000 };
-                Customer c4 = new Customer() { Name = "Rajiv", AccNo = 126, Amount = 5000 };
+                Customer c1 = new Customer() { Name = "Raghu", AccNo = 123, Amount = 10000 };
+                Customer c2 = new Customer() { Name = "Ravan", AccNo = 124, Amount = 8000 };
+                Customer c3 = new Customer() { Name = "Rohan", AccNo = 125, Amount = 7000 };
+                Customer c4 = new Customer() { Name = "Rajiv", AccNo = 126, Amount = 6000 };
+                Customer c5 = new Customer() { Name = "Rahil", AccNo = 127, Amount = 5500 };
                 List<Customer> customerls = new List<Customer>();
                 customerls.Add(c1);
                 customerls.Add(c2);
                 customerls.Add(c3);
                 customerls.Add(c4);
+                customerls.Add(c5); 
 
                 string filepath = "C:\\Raghuvarun.txt";
                 StreamWriter sw = new StreamWriter(filepath);

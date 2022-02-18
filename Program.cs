@@ -341,6 +341,11 @@ namespace bank
         {
             static void Main(string[] args)
             {
+                Program p = new Program();
+
+                p.AccountOpening();
+                p.Atm();
+
 
                 Customer c1 = new Customer() { Name = "Raghu", AccNo = 123, Amount = 5000 };
                 Customer c2 = new Customer() { Name = "Ravan", AccNo = 124, Amount = 5000 };
@@ -353,6 +358,20 @@ namespace bank
                 customerls.Add(c3);
                 customerls.Add(c4);
                 //  public static void CustomerDetails(List<Customer> customerls)
+                
+                string filepath = "C:\\Raghuvarun.txt";
+                StreamWriter sw = new StreamWriter(filepath);
+                sw.WriteLine("-------------------------------------------------------");
+                sw.WriteLine("Name       ||        Account No       ||     Balance  |");
+                sw.WriteLine("-------------------------------------------------------");
+
+                foreach (Customer Cust in customerls)
+                {
+                    sw.WriteLine($"   { Cust.Name}   ||         {Cust.AccNo}             ||    {Cust.Amount}      |");
+                    sw.WriteLine("-------------------------------------------------------");
+                }
+
+                sw.Close();
 
                 Console.WriteLine("-------------------------------------------------------");
                 Console.WriteLine("Name       ||        Account No       ||     Balance  |");
@@ -365,11 +384,7 @@ namespace bank
                 }
 
 
-                Program p = new Program();
-
-                p.AccountOpening();
-                p.Atm();
-
+               
             }
         }
     }
